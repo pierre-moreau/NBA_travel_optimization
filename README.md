@@ -1,0 +1,3 @@
+# NBA_travel_optimization
+
+I calculate the total travel distance needed for all teams to perform the 2021-2022 NBA season ([data](https://www.basketball-reference.com/leagues/NBA_2022_games.html)). Approximate geographical coordinates are used to evaluate the distance traveled by each team from one game to the next. I then reshuffle the official NBA schedule by using a MCMC random walk in order to minimize the total travel distance. The first constraint I impose is that the exact same game cannot happen twice in a row, and the second is that each game for a team should be separated by at least 1 day. 
